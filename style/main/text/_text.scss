@@ -1,0 +1,21 @@
+@use "../../variables" as *;
+
+main p {
+  color: $color-secondary;
+
+  font-family: $font-secondary;
+  font-size: 1.7vh;
+  font-weight: 280;
+
+  line-height: 2.8vh;
+}
+
+main h1 {
+  color: $color-secondary;
+
+  font-family: $font-main;
+  font-size: 4vh;
+  font-weight: 500;
+
+  margin-left: 3vh;
+}

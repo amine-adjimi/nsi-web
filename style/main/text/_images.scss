@@ -1,0 +1,20 @@
+@use "../../variables" as *;
+
+.text_image {
+  width: 40%;
+
+  border: 10px solid $color-secondary;
+  border-radius: 20px;
+}
+
+.text_image.align_right {
+  float: right;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.text_image.align_left {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}

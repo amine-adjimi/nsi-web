@@ -1,0 +1,47 @@
+@use "../variables" as *;
+
+.selector-big-row {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.selector-big-row a {
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+
+  color: $color-secondary;
+  background-color: $color-primary;
+
+  border: none;
+
+  cursor: pointer;
+
+  font-family: $font-main;
+  font-size: 8vh;
+  font-weight: 400;
+  font-variation-settings: "MONO" 1, "CASL" 0, "slnt" 0, "CRSV" 0;
+
+  text-decoration: none;
+
+  transition: 0.2s ease;
+
+  &:hover, &:focus {
+    background-color: $color-secondary;
+    color: $color-primary;
+
+    font-weight: 700;
+    font-size: 8vh;
+    font-variation-settings: "MONO" 1, "CASL" 0, "slnt" -15, "CRSV" 0;
+
+    transition: 0.8s ease;
+  }
+}

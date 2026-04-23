@@ -1,0 +1,43 @@
+@use "../variables" as *;
+
+header nav {
+  display: flex;
+
+  flex-direction: row;
+
+  justify-content: center;
+
+  height: 100%;
+  width: 50%;
+}
+
+header nav a {
+  display: flex;
+  flex: 1;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+
+  color: $color-primary;
+
+  font-family: $font-main;
+  font-size: 2vh;
+  font-weight: 400;
+  font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
+
+  text-decoration: none;
+
+  transition: 0.1s;
+
+  &:hover, &:focus {
+    color: $color-secondary;
+    background-color: $color-primary;
+
+    font-weight: 700;
+    font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
+
+    transition: 0.2s ease;
+  }
+}
