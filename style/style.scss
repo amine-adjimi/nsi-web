@@ -1,6 +1,3 @@
-@use "_base/index" as _base;
-@use "_imports/index" as _imports;
-@use "_special/index" as _special;
-@use "footer/index" as footer;
-@use "header/index" as header;
-@use "main/index" as page;
+@use "base";
+@use "components";
+@use "layout";

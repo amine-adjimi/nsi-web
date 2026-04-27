@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as *;
+
+main {
+  padding: 40px 14% 40px 14%;
+}
+
+main p {
+  color: $color-secondary;
+
+  font-family: $font-secondary;
+  font-size: 1rem;
+  font-weight: 280;
+
+  line-height: 20px;
+}
+
+main h1 {
+  color: $color-secondary;
+
+  font-family: $font-main;
+  font-size: 2rem;
+  font-weight: 500;
+
+  margin-left: 3vh;
+}
+
+.text_image {
+  width: 40%;
+
+  border: 10px solid $color-secondary;
+  border-radius: 20px;
+}
+
+.text_image.align_right {
+  float: right;
+  margin-left: 40px;
+  margin-bottom: 40px;
+}
+
+.text_image.align_left {
+  float: left;
+  margin-right: 40px;
+  margin-bottom: 40px;
+}

@@ -1,4 +1,19 @@
-@use "../variables" as *;
+@use "../abstracts/variables" as *;
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  position: sticky;
+  z-index: 1000;
+
+  height: 10vh;
+
+  top: 0;
+
+  background-color: $color-secondary;
+}
 
 header nav {
   display: flex;
@@ -40,4 +55,20 @@ header nav a {
 
     transition: 0.2s ease;
   }
+}
+
+header h1 {
+  margin: 0;
+  line-height: 10vh;
+  width: 50%;
+
+  color: $color-primary;
+  background-color: $color-secondary;
+
+  text-align: left;
+  padding-left: 2vh;
+
+  font-family: $font-main;
+  font-weight: 800;
+  font-size: 4rem;
 }

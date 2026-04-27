@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 html {
   height: 100%;
   font-size: 15px;
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
   padding: 0;
-}
-
-body {
+  height: 100%;
   background-color: #F48B00;
   font-family: "Lexend", sans-serif;
   font-optical-sizing: auto;
-  height: 100%;
 }
 
 body::before {
@@ -69,19 +71,6 @@ body::before {
   transition: 0.8s ease;
 }
 
-header h1 {
-  margin: 0;
-  line-height: 10vh;
-  width: 50%;
-  color: #F48B00;
-  background-color: #FFFFFF;
-  text-align: left;
-  padding-left: 2vh;
-  font-family: "Recursive", monospace;
-  font-weight: 800;
-  font-size: 4rem;
-}
-
 header {
   display: flex;
   flex-direction: row;
@@ -121,6 +110,23 @@ header nav a:hover, header nav a:focus {
   font-weight: 700;
   font-variation-settings: "MONO" 0, "CASL" 0, "slnt" 0, "CRSV" 0;
   transition: 0.2s ease;
+}
+
+header h1 {
+  margin: 0;
+  line-height: 10vh;
+  width: 50%;
+  color: #F48B00;
+  background-color: #FFFFFF;
+  text-align: left;
+  padding-left: 2vh;
+  font-family: "Recursive", monospace;
+  font-weight: 800;
+  font-size: 4rem;
+}
+
+main {
+  padding: 40px 14% 40px 14%;
 }
 
 main p {
@@ -204,8 +210,13 @@ main h1 {
     margin-bottom: 5vw;
   }
 }
-main {
-  padding: 40px 14% 40px 14%;
+footer {
+  width: 100%;
+  padding: 20px;
+  background-color: #FFFFFF;
+  color: #F48B00;
+  text-align: center;
+  font-family: "Recursive", monospace;
 }
 
 /*# sourceMappingURL=style.css.map */
