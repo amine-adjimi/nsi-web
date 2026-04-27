@@ -1,5 +1,8 @@
+@use "../_variables" as *;
+
 html {
   height: 100%;
+  font-size: $font-size;
 }
 
 body {
