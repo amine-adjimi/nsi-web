@@ -1,0 +1,55 @@
+@use "../variables" as *;
+
+.sidebar {
+  float: right;
+  width: 300px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  background-color: $color-secondary;
+  border: 5px solid $color-secondary;
+  border-radius: 20px;
+  padding: 1%;
+  box-sizing: border-box;
+
+  .sidebar_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid $color-secondary;
+  }
+
+  .info-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba($color-primary, 0.5);
+    font-family: $font-secondary;
+    font-size: $font-secondary-size-paragraph;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-weight: $font-secondary-weight-paragraph*2;
+      color: $color-primary;
+      padding-right: 10px;
+    }
+
+    .value {
+      font-weight: $font-secondary-weight-paragraph;
+      color: $color-primary;
+      text-align: right;
+    }
+  }
+}
+
+// Responsive adjustment for smaller screens
+@media (max-width: 800px) {
+  .sidebar {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 5vw;
+  }
+}
