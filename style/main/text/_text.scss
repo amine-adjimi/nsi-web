@@ -4,18 +4,18 @@ main p {
   color: $color-secondary;
 
   font-family: $font-secondary;
-  font-size: 1.7vh;
-  font-weight: 280;
+  font-size: $font-secondary-size-paragraph;
+  font-weight: $font-secondary-weight-paragraph;
 
-  line-height: 2.8vh;
+  line-height: 20px;
 }
 
 main h1 {
   color: $color-secondary;
 
   font-family: $font-main;
-  font-size: 4vh;
-  font-weight: 500;
+  font-size: $font-main-size-h1;
+  font-weight: $font-main-weight-h1;
 
   margin-left: 3vh;
 }
